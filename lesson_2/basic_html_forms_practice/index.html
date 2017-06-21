@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Forms Practice</title>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset>
+				<dl>
+					<dt><label for="name">Your Name</label></dt>
+					<dd><input type="text" name="person_name" id="name"></dd>
+					<dt><label for="email">Email</label></dt>
+					<dd><input type="email" name="email" id="emil"></dd>
+					<dt><label for="phone_number">Phone Number</label></dt>
+					<dd><input type="tel" name=phone_number id="phone_number"></dd>
+					<dt><label for="message">Message</label></dt>
+					<dd><textarea id="message" name="message" rows="5" cols="70"></textarea></dd>
+				</dl>
+					<input type="submit" value="Send Message"> 
+				<input type="reset" value="Clear">
+			</fieldset>
+		</form> <br>
+		<form action="" method="">
+			<fieldset>
+				<label for="search">Search for</label>
+				<input type="search" name="search" id="search">
+				<label><input type="radio" name="Entertainment" value="TV">TV</label>
+				<label><input type="radio" name="Entertainment" value="Movies">Movies</label>
+				<label><input type="radio" name="Entertainment" value="Music">Music</label>
+				<input type="button" value="Search">
+			</fieldset>
+		</form> <br>
+		<form action="" method="post">
+			<fieldset>
+				<dl>
+					<dt><label for="movie">Movie</label></dt>
+					<dd><select name="movies">
+							<option>Looper</option>
+							<option>Frozen</option>
+							<option>Tommy Boy</option>
+						</select></dd>
+					<dt><label>Rating</label></dt>
+					<dd><input type="range" name="rating" min="1" max="5"></dd>
+				</dl>
+				<div>
+					<label><input type="checkbox" name="favorites" checked>Add to my favorites</label>
+				</div>
+				<input type="submit" value="Rate movie">
+			</fieldset>
+		</form>
+	</body>
+</html>
