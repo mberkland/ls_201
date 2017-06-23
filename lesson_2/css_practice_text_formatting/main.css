@@ -1,0 +1,37 @@
+body {
+	font: italic normal 16px/140% Helvetica, Arial, sans-serif;
+}
+
+article {
+	font-style: normal;
+	font-size: 14px;
+}
+
+h1 {
+	font-family: Georgia, serif;
+}
+
+article p {
+	line-height: 150%
+}
+
+.problem-3 {
+	font-size: 18px;
+	font-style: normal;
+	font-family: "Times New Roman", serif;
+}
+
+.problem-3 mark{
+	font-family: courier, monospace;
+	font-size: 12px;
+	background-color: yellow;
+}
+
+.problem-3 strong {
+	font-size: 15px;
+}
+
+.problem-3 em {
+	font-size: 20px;
+	text-transform: uppercase;
+}
