@@ -1,0 +1,15 @@
+1. Which of these tags are semantic, and which are not?
+- Semantic: <article>, <h3>, <aside>, <header>, <section>, <footer>, <strong>
+- Non-Semantic: <b>, <div>, <span>
+
+2. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+- <article> would be the most approrpiate tag since this content stands alone and could be copied and used on other sites with no loss of meaning.
+
+3. Given the HTML from question 2, would it be appropriate to replace the <article> tag with <address> or <blockquote>? If so, which one?
+- I would keep the <article> tag and then nest a <blockquote> inside of it. Blockquote is appropriate becuase this is a long direct quote.
+
+4. Given the following HTML, would <section>, <aside>, <article>, or <div> be the most appropriate element for the tag shown as <sometag>?
+- <section> would be the most appropriate tag. It's a clear section of content but cannot stand alone and therefore shouldn't be an <article>. 
+
+5. Given the following HTML, would <aside>, <section>, <blockquote>, or <div> be the most appropriate element for the tag shown as <sometag>?
+- <aside> would be the most appropriate tag. The text is a comment or aside that is related to the content above it.
