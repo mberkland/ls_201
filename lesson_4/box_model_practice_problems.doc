@@ -1,0 +1,117 @@
+1. Which of the following tags represent block elements? Which are inline? Whare are inline-block? Which are intermediate? You may assume that they all use the default display properties.
+<a> - inline
+<blockquote> - block
+<em> - inline
+<form> - block
+<img> - inline
+<input> - dependent on browser, oculd be inline or inline block
+<p> - block
+<span> - inline
+<textarea> - dependent on browser, could be inline or inline block
+<ul> - block
+
+2. Assume that your browsers viewport (the viewable area for content) is 720 pixels wide and that your HTML contains two consecutive elements with the following CSS styles.
+
+element-selector {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 350px;
+}
+
+Which of the following combinations of element types will display side-by-side in your browser? Select all that apply:
+b. both elements are inline elements
+c. both elements are inline-block elements
+f. one element is an inline element and one is an inline-block element
+
+3. Given the CSS below and the knowledge taht the browsers viewport is large enough to display an entire textarea that uses these styles, how much horizontal and vertical area will that element require in the browser?
+
+textarea {
+	dispay: inline-block;
+	width: 500px;
+	height: 300px;
+	border: 4px solid red;
+	padding: 10px 20px;
+	margin: 20px 20px 10px 10px;
+}
+
+horizontal space: 578px
+vertical space: 358px
+
+4. Given the CSS below and the knowledge that the browser's viewport is 800 pixels wide and 1000 pixels high, how much horizontal and vertical area will a section element require in the browser?
+
+section {
+	width: 500px;
+	height: 300px;
+	border: 4px solid red;
+	padding: 10px 20px;
+	margin: 20px 20px 10px 10px;
+}
+
+horizontal space: 578px
+vertical space: 358px
+
+However, since the section element is a block element, the browser won't use the leftover space, as nothing else will appear on the same line as a block element.
+
+5. Given the CSS below and the knowledge that the browser's viewport is 800 pixels wide and 1000 pixels high, how much horizontal and vertical area doesn an em element require in the browser?
+
+em {
+	width: 500px
+	height: 300px;
+	border: 4px solid red;
+	padding: 10px 20px;
+	margin: 20px 20px 10px 10px;
+}
+
+em is an inline element. Browsers ignore the width and height properties for inline elements. Instead, they compute the width and height based on the actual content of the element. Because of this we can't calculate the amount of space the em elemetn will take up. 
+
+However, we do know a few things with certainty. The 4px  solid red border will be applied but the results will appear odd since it won't push any surrounding top or botom cotent out of the way. Top and bottom margins will be ignored. Horizontal margins and padding will be applied, so 40px on the right and 30 px on the left side will be applied.  The top and bottom padding will be applied but the surrounding content will not adjust. You will only be able to see this vertical padding because of the red border.
+
+6. Given the CSS below and the knowledge that the browsers viewport is large enough to display an entire textarea that uses these meaurements, how much horizontal and vertical area does tht element require in the browser?
+
+textarea {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 500px;
+	height: 300px;
+	border: 4px solid red;
+	padding: 10px 20px;
+	margin: 20px 20px 10px 10px;
+}
+
+Because box-sizing is set to border-box, the padding and border will be included insie of the declared width and height. Therfore only the margin spacing needs to be added.
+
+horizontal space: 530px
+vertical space: 330px;
+
+7. Will the following HTML and CSS display the two article boxes side-by-side? If not, why not? How would you fix the code, so it does place the boxes side-by-side?
+
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Question 7</title>
+    <style>
+      section {
+        width: 400px;
+        height: 400px;
+        margin: 0;
+        padding: 20px;
+        border: 1px solid red;
+      }
+
+      article {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>...</article><article>...</article>
+    </section>
+  </body>
+</html>
+
+- The above code will not display the two article boxes side-by-side. To accomplish this, the article element's display property should be changed to inline-block and the box-sizing should be set to border-box. 
