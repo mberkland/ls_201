@@ -51,7 +51,8 @@ table {
 /* Page Styles */
 
 body {
-	font-family:	'Nunito', "Helvetica", sans-serif;
+	font: 20px	'Nunito', "Helvetica", sans-serif;
+	color: #515559;
 	background-color: #46506b;
 	background-image: url("bg_body.gif");
 	background-repeat: repeat;
@@ -77,11 +78,6 @@ h2 {
 	font-size: 36px;
 	font-weight: 700;
 	padding-bottom: 40px;
-}
-
-p {
-	font-size: 20px;
-	margin-bottom: 0;
 }
 
 .about-us {
