@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>Practice Problems Positioning</title>
+		<style>
+			#positioned {
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				margin: 0 0 0 -200px;
+				padding: 30px 15px;
+				width: 400px;
+				background-color: yellow;
+				z-index: 2;
+			}
+			
+			.tinybox {
+				position: absolute;
+				background-color: red;
+				width: 20px;
+				height: 20px;
+				z-index: 5;
+				top: -10px;
+				left: -10px;
+				
+			}
+			
+			.box {
+				background: rgba(0, 0, 0, .6);
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				z-index: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor, augue vel finibus convallis, sapien urna posuere velit, eget auctor lacus enim accumsan libero. Integer urna mi, dignissim quis rutrum in, elementum at erat. Morbi dolor leo, mattis sit amet arcu in, volutpat ornare elit. Morbi eu diam dolor. Sed et ante rutrum, pharetra ipsum eu, auctor ante. Ut imperdiet, lorem in maximus posuere, quam ipsum auctor purus, quis finibus dolor turpis eu nibh. Praesent posuere felis sit amet velit cursus posuere. Nullam semper quis nisi id fringilla. Praesent consectetur eleifend egestas. Maecenas rutrum dolor augue, nec accumsan massa suscipit feugiat. Suspendisse facilisis odio in urna molestie, quis rhoncus tellus gravida.</p>
+		
+		<p>Sed vel vehicula justo. Donec molestie lectus enim, eu tristique tellus imperdiet eu. Vivamus ullamcorper suscipit turpis commodo consequat. Nullam dapibus auctor nisi, porta egestas arcu facilisis id. Ut ornare elit quis enim rutrum, sit amet maximus velit ultricies. Nunc rutrum purus a sollicitudin facilisis. Ut sit amet dolor eu risus ultricies accumsan. Duis dapibus congue mauris vitae convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus quis lacus et nisl vestibulum vulputate vitae vel est. Praesent pretium finibus est, sed vulputate tellus eleifend et.</p>
+		
+		<p>Cras arcu sapien, posuere sit amet facilisis sit amet, cursus eget augue. Cras id quam eu diam interdum dapibus. Etiam blandit accumsan ante et molestie. Proin dictum eu mauris sed mattis. Morbi in mi mollis neque consectetur laoreet. Morbi quis elit eu diam scelerisque ultricies in id risus. Praesent viverra iaculis lectus at dignissim. Ut maximus lorem vitae erat tristique, vitae mollis nisl hendrerit. Suspendisse potenti. Phasellus sapien quam, porttitor consectetur massa ac, finibus placerat turpis. Nunc condimentum egestas imperdiet. In et diam ultricies tortor viverra maximus. Nam sed volutpat libero, quis elementum nisi.</p>
+		
+		<p>Sed vel vehicula justo. Donec molestie lectus enim, eu tristique tellus imperdiet eu. Vivamus ullamcorper suscipit turpis commodo consequat. Nullam dapibus auctor nisi, porta egestas arcu facilisis id. Ut ornare elit quis enim rutrum, sit amet maximus velit ultricies. Nunc rutrum purus a sollicitudin facilisis. Ut sit amet dolor eu risus ultricies accumsan. Duis dapibus congue mauris vitae convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus quis lacus et nisl vestibulum vulputate vitae vel est. Praesent pretium finibus est, sed vulputate tellus eleifend et.</p>
+		
+		<p>Cras arcu sapien, posuere sit amet facilisis sit amet, cursus eget augue. Cras id quam eu diam interdum dapibus. Etiam blandit accumsan ante et molestie. Proin dictum eu mauris sed mattis. Morbi in mi mollis neque consectetur laoreet. Morbi quis elit eu diam scelerisque ultricies in id risus. Praesent viverra iaculis lectus at dignissim. Ut maximus lorem vitae erat tristique, vitae mollis nisl hendrerit. Suspendisse potenti. Phasellus sapien quam, porttitor consectetur massa ac, finibus placerat turpis. Nunc condimentum egestas imperdiet. In et diam ultricies tortor viverra maximus. Nam sed volutpat libero, quis elementum nisi.</p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor, augue vel finibus convallis, sapien urna posuere velit, eget auctor lacus enim accumsan libero. Integer urna mi, dignissim quis rutrum in, elementum at erat. Morbi dolor leo, mattis sit amet arcu in, volutpat ornare elit. Morbi eu diam dolor. Sed et ante rutrum, pharetra ipsum eu, auctor ante. Ut imperdiet, lorem in maximus posuere, quam ipsum auctor purus, quis finibus dolor turpis eu nibh. Praesent posuere felis sit amet velit cursus posuere. Nullam semper quis nisi id fringilla. Praesent consectetur eleifend egestas. Maecenas rutrum dolor augue, nec accumsan massa suscipit feugiat. Suspendisse facilisis odio in urna molestie, quis rhoncus tellus gravida.</p>
+		
+		<p>Sed vel vehicula justo. Donec molestie lectus enim, eu tristique tellus imperdiet eu. Vivamus ullamcorper suscipit turpis commodo consequat. Nullam dapibus auctor nisi, porta egestas arcu facilisis id. Ut ornare elit quis enim rutrum, sit amet maximus velit ultricies. Nunc rutrum purus a sollicitudin facilisis. Ut sit amet dolor eu risus ultricies accumsan. Duis dapibus congue mauris vitae convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus quis lacus et nisl vestibulum vulputate vitae vel est. Praesent pretium finibus est, sed vulputate tellus eleifend et.</p>
+		
+		<p>Cras arcu sapien, posuere sit amet facilisis sit amet, cursus eget augue. Cras id quam eu diam interdum dapibus. Etiam blandit accumsan ante et molestie. Proin dictum eu mauris sed mattis. Morbi in mi mollis neque consectetur laoreet. Morbi quis elit eu diam scelerisque ultricies in id risus. Praesent viverra iaculis lectus at dignissim. Ut maximus lorem vitae erat tristique, vitae mollis nisl hendrerit. Suspendisse potenti. Phasellus sapien quam, porttitor consectetur massa ac, finibus placerat turpis. Nunc condimentum egestas imperdiet. In et diam ultricies tortor viverra maximus. Nam sed volutpat libero, quis elementum nisi.</p>
+		
+		<div id="positioned">
+			<div class="tinybox"></div>
+			I'm positioned!
+		</div>
+		
+		<div class="box"></div>
+	</body>
+</html>
